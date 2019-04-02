@@ -1,4 +1,5 @@
-#ServerGroupAddBot
+# ServerGroupAddBot
+
 A small Java ServerGroup Bot for TeamSpeak 3.
 
 On 1. April 2019 we needed a method to add a list of groups to all clients in our Ts3-database of one specific virtual server. 
