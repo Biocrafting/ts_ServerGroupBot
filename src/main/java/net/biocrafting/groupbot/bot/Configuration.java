@@ -13,7 +13,11 @@ public class Configuration {
 	public static final String PROPERTY_DB_PASSWORD = "";
 	public static final String PROPERTY_DB_SERVER = "";
 	/**
-	 * ######################################### 
+	 * 		       DRIVER SETTINGS.
+	 */
+	public static final String DB_URL = "jdbc:mariadb://";
+	public static final String DB_DRIVER = "org.mariadb.jdbc.Driver";
+	/*
 	 * ######################################### 
 	 */
 	
