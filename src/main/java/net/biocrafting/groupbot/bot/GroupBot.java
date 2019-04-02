@@ -15,7 +15,7 @@ import net.biocrafting.groupbot.databases.ConnectionException;
 public class GroupBot {
 	
 	private List<Integer> userIds = new ArrayList<Integer>(); 
-	private ArrayList<Integer> serverGroups = new ArrayList<Integer>();
+	private List<Integer> serverGroups = new ArrayList<Integer>();
 	private int server_id;
 	private Boolean random = Boolean.FALSE;
 	
@@ -93,8 +93,7 @@ public class GroupBot {
 			
 			for (int user :userIds) {
 				if (random) {
-					@SuppressWarnings("unchecked")
-					ArrayList<Integer> randomGroups = (ArrayList<Integer>) this.serverGroups.clone();
+					ArrayList<Integer> randomGroups = new ArrayList<Integer>(this.serverGroups);
 					Random random = new Random();
 					for (int i = 0; i < this.serverGroups.size() / 2; i++) {
 						randomGroups.remove(random.nextInt(randomGroups.size()));
